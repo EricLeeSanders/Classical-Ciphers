@@ -74,7 +74,7 @@ public class MainPanel extends JPanel implements ActionListener {
 		submitButton.setText("Encrypt");
 		plainText.setEditable(true);
 		cipherText.setText("");
-		//cipherText.setEditable(false);
+		cipherText.setEditable(false);
 		cipherText.setBackground(Color.lightGray);
 		plainText.setBackground(Color.white);
 	}
@@ -90,7 +90,7 @@ public class MainPanel extends JPanel implements ActionListener {
 	}
 
 	private void setDecipherConfig() {
-		//plainText.setEditable(false);
+		plainText.setEditable(false);
 		plainText.setText("");
 		plainText.setBackground(Color.lightGray);
 		cipherText.setBackground(Color.white);
