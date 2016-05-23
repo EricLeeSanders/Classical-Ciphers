@@ -1,7 +1,8 @@
 # Classical-Ciphers
 #### Classical Ciphers written in Java using Swing for GUI
 
-This was a midterm project for my cryptography class at Butler. We had to implement an encryption and decryption for a Shift, Affine, Substitution, and Vigenere Cipher. I went a levels beyond and also implements auto decryption for Shift and Vigenere Cipher. The auto decryption will automatically decrypt an encrypted text and give the shift or key that was used to encrypt the text. I also added a GUI rather than using a simple command prompt.
+
+This was a midterm project for my cryptography class at Butler. We had to implement an encryption and decryption for a Shift, Affine, Substitution, and Vigenere Cipher. I went a few levels beyond by adding a GUI and also implementing auto decryption for Shift and Vigenere Cipher. The auto decryption will automatically decrypt an encrypted text and give the shift or key that was used to encrypt the text. Shift uses frequency analysis to determine the similarity between each shift and the English language. Vigenere uses the Friedman Test as well as the Kasiski Test to deteremine the keyword length. Then using frequency analysis from the shift cipher, we find the best match to the English language for each coset.
 
 I decided to use Java for this project because I was familiar with Swing. This allowed me to quickly create a GUI.
 
@@ -10,7 +11,8 @@ I plan to add a web front end for ths app in the near future and may add/improve
 
 ### Shift
 The program can encrypt, decrypt, and auto decrypt.
-It auto decrypts using frequency analysis to determine the similarity between each shift and the English   language.
+It auto decrypts using frequency analysis to determine the similarity between each shift and the English language.
+
 Sample output with a shift of 19:
 ##### Plain Text
 Prepare the forces. We attack at midnight.
@@ -54,6 +56,7 @@ PREPARETHEFORCESWEATTACKATMIDNIGHT
 
 ### Keyword Columnar Transposition Substitution
 The program can encrypt and decrypt using keyword columnar trapsosition substitution cipher. 
+
 Sample of output with keyword: SPY
 ##### Plain Text
 They don't know that I'm spying on them.
@@ -67,6 +70,7 @@ Substitution encryption complete!
 
 ### Affine 
 The program can encrypt and decrypt using affine cipher.
+
 Sample of output with A:11, B:5
 ##### Plain Text
 What's the wifi password?
@@ -77,7 +81,7 @@ NEFGVGEXNPIPOFVVNDKM
 ### Vigenere
 The program can encrypt, decrypt, and auto decrypt using vigenere cipher.
 Auto decryption uses the Friedman Test as well as the Kasiski Test to deteremine the keyword length.
-Then using frequency analysis from the shift cipher, we find the best match to the English   language for each coset.
+Then using frequency analysis from the shift cipher, we find the best match to the English language for each coset.
 
 Sample ouput with the text: LINCOLN
 ##### Plain Text
