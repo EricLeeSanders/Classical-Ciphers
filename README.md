@@ -2,7 +2,7 @@
 #### Classical Ciphers written in Java using Swing for GUI
 
 
-This was a midterm project for my cryptography class at Butler. We had to implement an encryption and decryption for a Shift, Affine, Substitution, and Vigenere Cipher. I went a few levels beyond by adding a GUI and also implementing auto decryption for Shift and Vigenere Cipher. The auto decryption will automatically decrypt an encrypted text and give the shift or key that was used to encrypt the text. Shift uses frequency analysis to determine the similarity between each shift and the English language. Vigenere uses the Friedman Test as well as the Kasiski Test to deteremine the keyword length. Then using frequency analysis from the shift cipher, we find the best match to the English language for each coset.
+This was a midterm project for my cryptography class at Butler. We had to implement encryption and decryption for a Shift, Affine, Substitution, and Vigenere Cipher. I went a few levels beyond by adding a GUI and also implementing auto decryption for Shift and Vigenere Cipher. The auto decryption will automatically decrypt an encrypted text and give the shift or key that was used to encrypt the text. Shift uses frequency analysis to determine the similarity between each shift and the English language. Vigenere uses the Friedman Test as well as the Kasiski Test to deteremine the keyword length. Then using frequency analysis from the shift cipher, we find the best match to the English language for each coset.
 
 I decided to use Java for this project because I was familiar with Swing. This allowed me to quickly create a GUI.
 
