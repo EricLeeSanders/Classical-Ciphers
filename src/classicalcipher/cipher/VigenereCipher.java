@@ -380,7 +380,7 @@ public class VigenereCipher {
 		validateMessage(message);
 		if (key == null || key.trim().isEmpty()) {
 			notifyObserversMessage("Error: User did not enter a key");
-			throw new IllegalArgumentException("User did not enter a ley");
+			throw new IllegalArgumentException("User did not enter a key");
 		}
 	}
 }
