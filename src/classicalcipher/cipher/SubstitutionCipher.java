@@ -171,11 +171,11 @@ public class SubstitutionCipher {
 	 * @param key
 	 */
 	private void validate(String message, String key) {
-		if (message.equals("") || message == null) {
+		if (message == null || message.trim().isEmpty()) {
 			notifyObserversMessage("Error: User did not enter a message to encrypt/decrypt");
 			throw new IllegalArgumentException("User did not enter a message to encrypt/decrypt");
 		}
-		if (key.equals("") || key == null) {
+		if (key == null || key.trim().isEmpty()) {
 			notifyObserversMessage("Error: User did not enter a key");
 			throw new IllegalArgumentException("User did not enter a ley");
 		}

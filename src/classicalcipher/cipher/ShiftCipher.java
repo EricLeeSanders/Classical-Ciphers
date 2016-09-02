@@ -208,7 +208,7 @@ public class ShiftCipher {
 	 * @param message
 	 */
 	private void validateMessage(String message) {
-		if (message.equals("") || message == null) {
+		if (message == null || message.trim().isEmpty()) {
 			notifyObserversMessage("Error: User did not enter a message to encrypt/decrypt");
 			throw new IllegalArgumentException("User did not enter a message to encrypt/decrypt");
 		}

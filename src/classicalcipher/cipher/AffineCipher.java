@@ -135,7 +135,7 @@ public class AffineCipher {
 	 * @param shiftAmount
 	 */
 	private void validate(String message, int shiftAmountA, int shiftAmountB) {
-		if (message.equals("") || message == null) {
+		if (message == null || message.trim().isEmpty()) {
 			notifyObserversMessage("User did not enter a message to encrypt/decrypt");
 			throw new IllegalArgumentException("User did not enter a message to encrypt/decrypt");
 		}
