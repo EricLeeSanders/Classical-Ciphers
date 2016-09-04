@@ -60,6 +60,7 @@ public class VigenereCipher {
 		plainText = plainText.toUpperCase();
 		plainText = plainText.replaceAll("[^A-Z]", "");
 		key = key.toUpperCase();
+		key = key.replaceAll("[^A-Z]", "");
 		char[] keyArray = key.toCharArray();
 		char[] textArray = plainText.toCharArray();
 		char[] cipherArray = new char[plainText.length()];
@@ -94,6 +95,7 @@ public class VigenereCipher {
 		cipherText = cipherText.toUpperCase();
 		cipherText = cipherText.replaceAll("[^A-Z]", "");
 		key = key.toUpperCase();
+		key = key.replaceAll("[^A-Z]", "");
 		int shift = 0;
 		char[] keyArray = key.toCharArray();
 		char[] textArray = cipherText.toCharArray();
